@@ -1,0 +1,5 @@
+input rate: 2222222222
+txload: 333
+rxload: 10
+packets input: 6666666
+packets output: 44444444444

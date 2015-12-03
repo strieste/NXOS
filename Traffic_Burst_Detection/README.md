@@ -7,7 +7,7 @@ This script creates a NXOS guest-shell process that will detect bursts in traffi
 
 # Contents
 
-* vm_detection.py
+*trafficburstdetection.py
   - This is a valid and function script that can be run from any Nexus Guest shell. 
   
 * config.txt

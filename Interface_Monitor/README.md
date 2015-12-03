@@ -1,4 +1,4 @@
-Detect_Connected_VM
+Interface Monitoring
 ====================
 
 # Description
@@ -7,14 +7,14 @@ This script creates a NXOS guest-shell process that will detect specific virtual
 
 # Contents
 
-* vm_detection.py
+* nexus_interface_monitor.py
   - This is a valid and function script that can be run from any Nexus Guest shell. 
 
 ## Installing 
  
 Install the scripts to your NXOS filesystem
     
-scp vm_detectiop.py user@nexusswitch
+scp nexus_interface_monitor.py user@nexusswitch
 
 ##Usage
 

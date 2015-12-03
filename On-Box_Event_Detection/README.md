@@ -1,27 +1,26 @@
-Detect_Connected_VM
+On Box Event Detection
 ====================
 
 # Description
-This script creates a NXOS guest-shell process that will detect specific virtual machines within connected hypervisors.
-
+This script creates a NXOS guest-shell process that will detect specific events on a nexus switch, measure the severity and report back to the user with an alert email.
 
 # Contents
 
-* vm_detection.py
+* event_creator.py
   - This is a valid and function script that can be run from any Nexus Guest shell. 
 
 ## Installing 
  
 Install the scripts to your NXOS filesystem
     
-scp vm_detectiop.py user@nexusswitch
+scp event_creator.py user@nexusswitch
 
 ##Usage
 
-From a guest shell on NXOS, run vm_detection -h for usage parameters
+From a guest shell on NXOS, run event_creator.py -h for usage parameters
 
 #Support
-As of 12/1/15 this script supports ESX 5.x/6.x, KVM and Citrix Xen
+As of 12/1/15 this script supports SMTP/ESMTP (with no authentication) only
     
 # License
 

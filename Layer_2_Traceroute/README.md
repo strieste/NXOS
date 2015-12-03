@@ -1,27 +1,32 @@
-Detect_Connected_VM
+Layer 2 Traceroute
 ====================
 
 # Description
-This script creates a NXOS guest-shell process that will detect specific virtual machines within connected hypervisors.
+This script creates a NXOS guest-shell process that will perform a traceroute-like operation across a layer 2 network in order to calculate a bridging path.
 
 
 # Contents
 
-* vm_detection.py
+* layer_2_traceroute.py
   - This is a valid and function script that can be run from any Nexus Guest shell. 
 
 ## Installing 
  
 Install the scripts to your NXOS filesystem
     
-scp vm_detectiop.py user@nexusswitch
+scp layer_2_traceroute.py user@nexusswitch
 
 ##Usage
 
-From a guest shell on NXOS, run vm_detection -h for usage parameters
+ layer_2_traceroute.py -u admin -p 4u2kn0w -s esw1 -m 08:00:27:3e:cc:6a
+
+Add flag -t if you wish connect via telnet. If flag -t omitted, the connection will done via ssh.
+
+If there are errors, use flag -v for verbose.
+
 
 #Support
-As of 12/1/15 this script supports ESX 5.x/6.x, KVM and Citrix Xen
+As of 12/1/15 this script supports NXOS, and IOS
     
 # License
 

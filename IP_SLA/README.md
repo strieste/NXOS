@@ -1,8 +1,8 @@
-Detect_Connected_VM
+Using IP SLA to Update Configurations
 ====================
 
 # Description
-This script creates a NXOS guest-shell process that will detect specific virtual machines within connected hypervisors.
+This script creates a NXOS guest-shell process to demonstrate how IP SLA can be used to detect specific network events and then update network configurations based on that.
 
 
 # Contents
@@ -14,15 +14,14 @@ This script creates a NXOS guest-shell process that will detect specific virtual
  
 Install the scripts to your NXOS filesystem
     
-scp vm_detectiop.py user@nexusswitch
+scp ip_sla.py user@nexusswitch
 
 ##Usage
 
-From a guest shell on NXOS, run vm_detection -h for usage parameters
+From a guest shell on NXOS, run ip_sla.py -h for usage parameters
 
 #Support
-As of 12/1/15 this script supports ESX 5.x/6.x, KVM and Citrix Xen
-    
+=    
 # License
 
 Copyright 2014-2015 Cisco Systems, Inc.
